@@ -1,0 +1,354 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cant",
+				"cantCols"
+			],
+			[
+				"regis",
+				"registerHelper"
+			],
+			[
+				"hand",
+				"Handlebars"
+			],
+			[
+				"a",
+				"apellido"
+			],
+			[
+				"sho",
+				"showString"
+			],
+			[
+				"com",
+				"compile"
+			],
+			[
+				"templa",
+				"template-cua"
+			],
+			[
+				"re",
+				"result"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "template.html",
+			"settings":
+			{
+				"buffer_size": 8487,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "less/styles.less",
+			"settings":
+			{
+				"buffer_size": 1460,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "todo",
+			"settings":
+			{
+				"buffer_size": 373,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Vlaptedes/Desktop/TestingTemplate",
+		"/C/Users/Vlaptedes/Desktop/TestingTemplate/less"
+	],
+	"file_history":
+	[
+		"/C/Users/Vlaptedes/Desktop/translations/js/main.js",
+		"/C/Users/Vlaptedes/Desktop/translations/js/require.js",
+		"/C/Users/Vlaptedes/Desktop/translations/js/controller.js",
+		"/C/Users/Vlaptedes/Desktop/translations/index.html",
+		"/C/Users/Vlaptedes/Desktop/TestingTemplate/js/main.js",
+		"/C/Users/Vlaptedes/Desktop/translations/js/Helpers/helpers.js",
+		"/C/Users/Vlaptedes/Desktop/TestProject/less/body.less",
+		"/C/Users/Vlaptedes/Desktop/translations/templates/Main.hbs",
+		"/C/Users/Vlaptedes/Desktop/translations/templates/RightSide.hbs",
+		"/C/Users/Vlaptedes/Desktop/translations/templates/Write.hbs",
+		"/C/Users/Vlaptedes/Desktop/TestProject/less/sidebar.less",
+		"/C/Users/Vlaptedes/Desktop/startbootstrap-simple-sidebar-1.0.6/css/simple-sidebar.css",
+		"/C/Users/Vlaptedes/Desktop/startbootstrap-simple-sidebar-1.0.6/index.html",
+		"/C/Users/Vlaptedes/Desktop/startbootstrap-simple-sidebar-1.0.6/js/bootstrap.js",
+		"/C/Users/Vlaptedes/Desktop/startbootstrap-simple-sidebar-1.0.6/css/bootstrap.css",
+		"/C/Users/Vlaptedes/Desktop/startbootstrap-simple-sidebar-1.0.6/css/bootstrap.min.css",
+		"/C/Users/Vlaptedes/Desktop/startbootstrap-simple-sidebar-1.0.6/js/jquery.js",
+		"/C/Users/Vlaptedes/Desktop/startbootstrap-simple-sidebar-1.0.6/js/bootstrap.min.js",
+		"/C/Users/Vlaptedes/Desktop/stock_price.html",
+		"/C/Users/Vlaptedes/Desktop/TestProject/less/base.less",
+		"/C/Users/Vlaptedes/Desktop/TestProject/less/header.less",
+		"/C/Users/Vlaptedes/Desktop/TestProject/less/calculator.less",
+		"/C/Users/Vlaptedes/Desktop/TestProject/js/Views/MainView.js",
+		"/C/Users/Vlaptedes/Desktop/TestProject/js/main.js",
+		"/C/Users/Vlaptedes/Desktop/TestProject/css/styles.css",
+		"/C/Users/Vlaptedes/Desktop/TestProject/less/side.less",
+		"/C/Users/Vlaptedes/Desktop/TestProject/less/datepicker.less",
+		"/C/Users/Vlaptedes/Desktop/translations/templates/ConfirmModal.hbs",
+		"/C/Users/Vlaptedes/Desktop/translations/templates/YesNo.hbs",
+		"/C/Users/Vlaptedes/Desktop/translations/less/header.less",
+		"/C/Users/Vlaptedes/Desktop/translations/less/base.less",
+		"/C/Users/Vlaptedes/Desktop/translations/less/styles.less",
+		"/C/Users/Vlaptedes/Desktop/translations/less/side.less",
+		"/C/Users/Vlaptedes/Desktop/translations/css/styles.css"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"debugger",
+			">';\n",
+			"debugger",
+			"0",
+			"sidebarVillera",
+			"source",
+			"list"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8487,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2686,
+								2686
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1153.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "less/styles.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1460,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1273,
+								1273
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 495.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "todo",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 373,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								246,
+								246
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "proyecto.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 218.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,60 @@
+/**********************
+**
+**TEMPLATES
+**********************/
+#uno {
+  width: 250px;
+  height: 150px;
+  background-color: lightGray;
+  margin-bottom: 5px;
+}
+#dos {
+  width: 250px;
+  height: 100px;
+  background-color: pink;
+  margin-bottom: 5px;
+}
+#tre {
+  width: 550px;
+  height: 100px;
+  background-color: green;
+  margin-bottom: 5px;
+}
+#cua {
+  width: 550px;
+  height: 100px;
+  background-color: #717171;
+  margin-bottom: 5px;
+}
+#cin {
+  width: 550px;
+  height: 100px;
+  background-color: #185d8e;
+  margin-bottom: 5px;
+}
+#sei {
+  width: 550px;
+  height: 100px;
+  background-color: #0979be;
+  margin-bottom: 5px;
+}
+#sei table {
+  border-collapse: collapse;
+}
+#sei table,
+#sei th,
+#sei td {
+  border: 1px solid black;
+}
+#sie {
+  width: 550px;
+  height: 100px;
+  background-color: #f5f5f5;
+  margin-bottom: 5px;
+}
+/************************
+**
+** VARIABLES AND FUNCTIONS
+**
+************************/
+/*colores pa proba*/

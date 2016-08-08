@@ -1,0 +1,27 @@
+TODO:
+
+fondo, titulo, hacer nuevos tpl separados por HR
+1 js para handlebars
+1 js para cada template
+
+-------
+
+1- IF (true/false) DONE
+
+2- UNLESS DONE
+
+3- EACH
+	(mostrar valor del contexto)
+
+4- HELPERS
+	a) TAG A DONE
+	b) UL LI DONE
+	c) TABLE DONE
+	d) TAG H DONE
+
+5- VER HELPER CONCHA xq no funca el link
+
+6- PARTIAL TEMPLATES
+create fake chat
+
+BASUUUUUUUUUUUURAAAAAAAAAAAAA

@@ -1,0 +1,280 @@
+<html>
+    <head>
+
+        <title> Test Handlebars </title>
+
+        <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
+        <!-- <script data-main="js/main" src="js/require.js"></script> -->
+
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <script src="js/jquery.js"></script>
+        <script src="js/handlebars.js"></script>
+    </head>
+    <body>
+
+        <br />
+        <center><h1>RAMAO</h1></center>
+        
+        <hr/>
+
+        <div id="uno"></div>
+
+        <hr/>
+
+        <div id="dos"></div>
+
+        <hr/>
+
+        <div id="tre"></div>
+
+        <hr/>
+
+        <div id="cua"></div>
+
+        <hr/>
+
+        <div id="cin"></div>
+
+        <hr/>
+
+        <div id="sei"></div>
+
+        <hr/>
+
+        <div id="sie"></div>
+
+        <hr/>
+
+        <script id="template-uno" type="text/x-handlebars-template">
+          <div class="entry">
+            <h1>{{title}}</h1>
+            <div class="body">
+              {{body}}
+            </div>
+            <div>PIJOTA</div>
+            <br />
+            {{#concha this text='mytext' url='www.google.com' asd='cacota'}}{{/concha}}
+          </div>
+        </script>
+
+        <script id="template-dos" type="text/x-handlebars-template">
+            <div class="entry">
+            {{#if showTitle}}
+                <h1>{{title}}</h1>
+            {{else}}
+                <h1>{{body}}</h1>
+            {{/if}}
+            </div>
+        </script>
+
+        <script id="template-tre" type="text/x-handlebars-template">
+            <div class="entry">
+                {{time}}
+                <ul>
+                    {{#each lista}}  
+                        <li>{{apellido}}, {{nombre}} - aaaa: {{edad}}</li>
+                    {{/each}}  
+                </ul>
+            </div>
+        </script>
+
+        <script id="template-cua" type="text/x-handlebars-template">
+            <div class="entry">
+                {{#unless showString}}
+                    {{#getBigMF this text='CABEZA DE TORTUGA' size='1'}}{{/getBigMF}}            
+                {{else}}
+                    {{#getBigMF this text='GORRA BASURA' size='7'}}{{/getBigMF}}
+                {{/unless}}   
+            </div>            
+        </script>
+
+        <script id="template-cin" type="text/x-handlebars-template">
+            <div class="entry">
+                  {{#megaList gentuza}}{{nombre}} {{apellido}}{{/megaList}}
+            </div>            
+        </script>
+
+        <script id="template-sei" type="text/x-handlebars-template">
+            <div class="entry">
+                {{#altaTabla gentuza}}{{nombre}} {{apellido}}{{/altaTabla}}
+            </div>            
+        </script>
+
+        <!-- CODIGO -->
+        <script type="text/javascript">
+            
+            // HELPERS
+
+            // <a></a>
+            Handlebars.registerHelper('concha', function(context, params) {
+                // console.log(context, params)
+              text = Handlebars.escapeExpression(params.hash.text);
+              url  = Handlebars.escapeExpression(params.hash.url);
+
+              var result = '<a href="' + url + '">' + text + '(' + context.title + ')</a>';
+              // alert(result)
+              return new Handlebars.SafeString(result);
+            });
+
+            // <hSize></hSize>
+            Handlebars.registerHelper('getBigMF', function(context, params) {
+                text = Handlebars.escapeExpression(params.hash.text);
+                size = Handlebars.escapeExpression(params.hash.size);
+
+                var result = '<h' + size + '>' + text + '</h' + size + '>';
+                return new Handlebars.SafeString(result);
+            });
+
+            // <ul><li></li></ul>
+            Handlebars.registerHelper('megaList', function(items, options){
+                var result = '<ul>';
+                
+                for(var i=0, l=items.length; i<l; i++) {
+                    
+                    result = result + '<li>' + options.fn(items[i]) + '</li>';   
+                }
+
+                result = result + '</ul>';
+
+                return new Handlebars.SafeString(result);
+            });
+
+            // <table></table>
+            Handlebars.registerHelper('altaTabla', function(items, options){
+                var listilla = Object.keys(items[0]); //cabecera
+                var cantCols = Object.keys(items[0]).length; // cantidad de columnas
+                //alert(cantCols); 
+
+                var result = '<table>';
+                result = result + '<thead>';
+                result = result + '<tr>';
+
+                for(var i=0, l=Object.keys(items[0]).length; i<l; i++) {
+                    
+                    result = result + '<th>' + listilla[i] + '</th>';   
+                }
+
+                result = result + '</tr>';
+                result = result + '</thead>';
+                
+                result = result + '<tbody>';
+
+
+                for (var i = 0; i < items.length; i++ ) {
+                    result = result + '<tr>';
+
+                    for (var key in items[i]) {
+                        result = result + '<td>' + items[i][key] + '</td>';
+                    };
+
+                    result = result + '</tr>';
+                };
+
+                result = result + '</tbody>';
+                result = result + '</table>';
+                
+                
+                return new Handlebars.SafeString(result);
+            });
+
+
+            /* *************** *************** *************** *************** *************** */
+
+            //TEMPLATE 1
+
+            var source   = $("#template-uno").html();
+            var template = Handlebars.compile(source);
+
+            var context = {
+                title: "mi titulo", 
+                body: "mi cuerpo delgado"
+            };
+
+            $('#uno').html(template(context))
+
+                
+            /* *************** *************** *************** *************** *************** */
+
+            //TEMPLATE 2
+
+            var source   = $("#template-dos").html();
+            var template = Handlebars.compile(source);
+
+            var context = {
+                title: "this is my title", 
+                body: "ramaos body",
+                showTitle: false
+            };
+            // var html    = template(context);
+
+            $('#dos').html(template(context))
+
+            /* *************** *************** *************** *************** *************** */
+
+            //TEMPLATE 3
+
+            var source   = $("#template-tre").html();
+            var template = Handlebars.compile(source);
+
+            var context = {
+                lista: [{nombre:'ramon', apellido:'caca'}, {nombre:'jose', apellido:'perez'}, {nombre:'pancho', apellido:'soerrete'}],
+                time: new Date().toString()
+            };
+            // var html    = template(context);
+
+            $('#tre').html(template(context))
+
+            /* *************** *************** *************** *************** *************** */
+
+            //TEMPLATE 4
+
+            var source      = $("#template-cua").html();
+            var template    = Handlebars.compile(source);
+
+            var context = {
+                showString: false
+            }
+
+            $('#cua').html(template(context))
+
+            /* *************** *************** *************** *************** *************** */
+
+            //TEMPLATE 5
+
+            var source  = $("#template-cin").html();
+            var template = Handlebars.compile(source);
+
+            var context = {
+                gentuza: [ 
+                    {nombre:'Mala', apellido:'Famero'},
+                    {nombre:'Jorge', apellido:'Turtle Head'},
+                    {nombre:'Cobani', apellido:'Cortafuga'}
+                ]
+            };
+
+            $('#cin').html(template(context))
+
+            /* *************** *************** *************** *************** *************** */
+
+            //TEMPLATE 6
+
+            var source  = $("#template-sei").html();
+            var template = Handlebars.compile(source);
+
+            var context = {
+                gentuza: [ 
+                    {nombre:'Mala', apellido:'Famero'},
+                    {nombre:'Jorge', apellido:'Turtle Head'},
+                    {nombre:'Cobani', apellido:'Cortafuga'}
+                ]
+            };
+
+            $('#sei').html(template(context))
+
+            /* *************** *************** *************** *************** *************** */
+
+        
+
+        </script>
+    </body>
+</html>
